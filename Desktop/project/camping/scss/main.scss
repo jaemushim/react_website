@@ -1,0 +1,52 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+html {
+  font-size: 1rem;
+}
+
+// @include media-breakpoint-up(sm) {
+//   html {
+//     font-size: 0.5rem;
+//   }
+// }
+
+// @include media-breakpoint-up(md) {
+//   html {
+//     font-size: 1.2rem;
+//   }
+// }
+
+// @include media-breakpoint-up(lg) {
+//   html {
+//     font-size: 10rem;
+//   }
+// }
+
+@media (max-width: 1200px) {
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    transform: translateX(-100%);
+    transition: all ease 0.25s;
+    &.open {
+      transform: translateX(0);
+    }
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    &.open {
+      display: block;
+    }
+  }
+}

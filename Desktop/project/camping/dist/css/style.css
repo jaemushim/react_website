@@ -1,0 +1,28 @@
+.navbar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-link {
+  font-weight: 600;
+  margin-right: 1.8vw;
+}
+.mask {
+  background-image: url(../../img/bg1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+.main-container {
+  height: calc(100vh - 75px);
+}
+.main-container__main-title {
+  color: #da6f12;
+}
+@media (max-width: 450px) {
+  .logo {
+    width: 115px;
+  }
+}
