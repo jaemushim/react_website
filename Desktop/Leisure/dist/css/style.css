@@ -1,0 +1,156 @@
+/* Reset */
+ul {
+  list-style: none;
+}
+a {
+  color: #333;
+}
+
+/* Mask */
+.mask {
+  background: url(http://wangter.com/nf_admin/data/main_photo/1218321470_ZHoYMphu_1.jpg)
+    rgba(0, 0, 0, 0.3);
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.nav-link {
+  font-weight: 600;
+}
+@media (min-width: 1200px) {
+  .nav-link {
+    color: #fff;
+  }
+}
+
+@media (max-width: 450px) {
+  .navbar {
+    padding: 0.3rem 0.3rem;
+  }
+  .logo {
+    width: 115px;
+  }
+}
+
+/* Mobile Side Menu */
+/* Toggle Css & overlay */
+.hamberger {
+  font-size: 1.7rem;
+}
+.mobile-menu-x {
+  font-size: 1.3rem;
+}
+@media (max-width: 1200px) {
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: auto;
+    transform: translateX(-100%);
+    transition: all ease 0.25s;
+  }
+  .mobile-menu.open {
+    transform: translateX(0);
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+  }
+  .overlay.open {
+    display: block;
+  }
+}
+
+.navbar-dark .navbar-toggler {
+  border-color: rgba(0, 0, 0, 0);
+  font-size: 28px;
+}
+.m-util .row {
+  margin: 0;
+}
+.m-util__join {
+  font-size: 12px;
+}
+.m-util {
+  min-width: 250px;
+  background-color: #ccad89;
+}
+.m-util__nav {
+  background-color: #f5f5f5;
+  font-size: 12px;
+}
+.m-util__nav .col {
+  padding: 0.4rem;
+}
+.m-util__nav .col:nth-child(3n-2) {
+  border-right: 1px solid #ddd;
+}
+.m-util__nav .col:nth-child(1),
+.m-util__nav .col:nth-child(2) {
+  border-bottom: 1px solid #ddd;
+}
+.m-util__nav .col:nth-child(4),
+.m-util__nav .col:nth-child(5) {
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-link {
+  padding: 0.8rem !important;
+  padding-left: 1.4rem !important;
+}
+.nav-link {
+  border-bottom: 1px solid #ccc !important;
+}
+@media (min-width: 1200px) {
+  .nav-item {
+    border-bottom: none !important;
+  }
+  .nav-link {
+    padding: 0.5rem !important;
+    border-bottom: none !important;
+  }
+  .m-util {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .navbar-nav {
+    background-color: #f4f4f4;
+  }
+  .nav-link {
+    font-size: 14px;
+  }
+}
+
+/* Mobile Side Menu __ Sub Menu */
+.nav-item-2__sub-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: all linear 0.3s;
+}
+.nav-item-2__sub-menu.open {
+  max-height: 200px;
+}
+.nav-item-2__sub-menu-list {
+  font-size: 14px;
+  padding: 0.5rem;
+  padding-left: 1.4rem;
+  border-bottom: 1px solid #ccc !important;
+}
+.nav-item-2__sub-menu-list-link {
+  color: #333;
+}
