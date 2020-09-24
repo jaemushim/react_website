@@ -6,13 +6,6 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <!-- Bootstrap css -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -21,7 +14,9 @@
       crossorigin="anonymous"
     />
     <!-- Link -->
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="dist/css/main.css" />
+
     <link rel="stylesheet" href="dist/css/style.css" />
 
     <title>Camping</title>
@@ -34,6 +29,7 @@
         <!-- Navbar -->
         <nav
           class="navbar navbar-white navbar-expand-xl justify-content-sm-start fixed-top"
+          id="navbar"
         >
           <div class="container">
             <!-- Mobile Nav Toggler -->
@@ -50,7 +46,7 @@
               id="navbarTogglerDemo03"
             >
               <!-- Mobile Side Menu -->
-              <!-- Mobile Util -->
+              <!-- Mobile Menu Util -->
               <div class="m-util">
                 <div class="row p-2">
                   <div class="col-9">
@@ -70,7 +66,7 @@
                     <i class="fa fa-times mobile-menu-x" aria-hidden="true"></i>
                   </div>
                 </div>
-                <!-- Mobile Util Nav -->
+                <!-- Mobile Menu Util Nav -->
                 <div class="m-util__nav text-center text-black-50">
                   <div class="row">
                     <div class="col">공지사항</div>
@@ -82,7 +78,7 @@
                 </div>
               </div>
 
-              <!-- Mobile Nav List -->
+              <!-- Mobile Menu List -->
               <ul
                 class="navbar-nav mr-xl-auto align-self-stretch text-xl-center p-xl-0"
               >
@@ -90,7 +86,7 @@
                   <a class="nav-link" href="#"
                     >캠핑장 소개 <span class="sr-only">(current)</span></a
                   >
-                  <!-- Sub Menu -->
+                  <!--  Mobile Menu Sub Menu -->
                   <div class="nav-item-2__sub-menu">
                     <div class="nav-item-2__sub-menu-list">
                       <a href="" class="nav-item-2__sub-menu-list-link"
@@ -111,7 +107,7 @@
                 </li>
                 <li class="nav-item nav-item-2 active mr-xl-4">
                   <a class="nav-link" href="#">방 안내 </a>
-                  <!-- Sub Menu -->
+                  <!-- Mobile Menu Sub Menu -->
                   <div class="nav-item-2__sub-menu">
                     <div class="nav-item-2__sub-menu-list">
                       <a href="" class="nav-item-2__sub-menu-list-link"
@@ -143,6 +139,21 @@
                   <a class="nav-link" href="#">게시판 </a>
                 </li>
               </ul>
+
+              <!-- Mobile Menu Footer -->
+              <div
+                class="m-util__footer bg-dark w-100 text-right p-2 d-xl-none"
+              >
+                <a href="#" class="m-util__footer-item text-white-50"
+                  >ENGLISH</a
+                >
+                <a href="#" class="m-util__footer-item text-white-50"
+                  >인트라넷</a
+                >
+                <a href="#" class="m-util__footer-item text-white-50"
+                  >도매,제휴문의</a
+                >
+              </div>
             </div>
           </div>
         </nav>
@@ -151,18 +162,23 @@
         <!-- Jumbotron -->
         <div class="container">
           <div
-            class="jumbotron bg-transparent text-white vh-100 d-flex flex-column align-items-center justify-content-center"
+            class="jumbotron bg-transparent text-white vh-100 d-flex flex-column align-items-center justify-content-center text-center"
           >
-            <h1 class="font-weight-normal">
+            <h1 class="font-weight-normal jumbotron__title">
               왕터연수원에 오신 것을 환영합니다!
             </h1>
-            <h5 class="mt-2" style="color: rgba(255, 255, 255, 0.8)">
-              수려한 자연경관 속에 홍천강을 배경으로 조성된 대규모 캠핑&카라반
-              리조트
+            <h5
+              class="mt-2 jumbotron__sub-title"
+              style="color: rgba(255, 255, 255, 0.8)"
+            >
+              홍천강을 배경으로 조성된 대규모 캠핑&카라반 리조트
             </h5>
 
-            <hr class="my-4" />
-            <button type="button" class="btn btn-secondary btn-lg">
+            <hr class="my-3" />
+            <button
+              type="button"
+              class="jumbotron__button btn btn-outline-light btn-lg"
+            >
               RESERVE
             </button>
           </div>

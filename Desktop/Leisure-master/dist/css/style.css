@@ -11,8 +11,7 @@ a {
 
 /* Mask */
 .mask {
-  background: url(http://wangter.com/nf_admin/data/main_photo/1218321470_ZHoYMphu_1.jpg)
-    rgba(0, 0, 0, 0.3);
+  background: url(../../img/main-slide-1.jpg) rgba(0, 0, 0, 0.3);
   background-size: cover;
   background-blend-mode: multiply;
   background-position: center center;

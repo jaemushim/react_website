@@ -1,4 +1,4 @@
-window.addEventListener("load", function () {
+window.addEventListener("DOMContentLoaded", function () {
   if (window.matchMedia("(max-width: 1200px)").matches) {
     /* 뷰포트 너비가 1200 픽셀 이하 */
     // Mobile Menu Toggler
@@ -50,3 +50,24 @@ window.addEventListener("load", function () {
     mobileSubmenuToggler();
   }
 });
+
+// Navbar Scroll
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".navbar");
+    $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+  });
+});
+// Navbar Shrink
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.padding = "0.1rem 0.2rem";
+    console.log("ok");
+  } else {
+    document.getElementById("navbar").style.padding = "0.5rem 1rem";
+  }
+}

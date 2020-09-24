@@ -1,3 +1,6 @@
+body {
+  height: 3000px;
+}
 /* Reset */
 ul {
   list-style: none;
@@ -8,8 +11,7 @@ a {
 
 /* Mask */
 .mask {
-  background: url(http://wangter.com/nf_admin/data/main_photo/1218321470_ZHoYMphu_1.jpg)
-    rgba(0, 0, 0, 0.3);
+  background: url(../../img/main-slide-1.jpg) rgba(0, 0, 0, 0.3);
   background-size: cover;
   background-blend-mode: multiply;
   background-position: center center;
@@ -21,6 +23,7 @@ a {
 /* Navbar */
 .navbar {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  transition: 0.4s;
 }
 .nav-link {
   font-weight: 600;
@@ -39,9 +42,14 @@ a {
     width: 115px;
   }
 }
+/* Navbar Scrolled  */
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  transition: all 200ms linear;
+}
 
 /* Mobile Side Menu */
-/* Toggle Css & overlay */
+/* toggle css & overlay */
 .hamberger {
   font-size: 1.7rem;
 }
@@ -136,7 +144,7 @@ a {
   }
 }
 
-/* Mobile Side Menu __ Sub Menu */
+/* mobile side menu __ sub menu */
 .nav-item-2__sub-menu {
   max-height: 0;
   overflow: hidden;
@@ -153,4 +161,48 @@ a {
 }
 .nav-item-2__sub-menu-list-link {
   color: #333;
+}
+/* mobile side menu __ footer */
+.m-util__footer-item {
+  font-size: 12px;
+  position: relative;
+  margin: 0 0.3rem;
+}
+.m-util__footer-item:nth-child(2):before,
+.m-util__footer-item:nth-child(3):before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -0.5rem;
+  width: 3px;
+  height: 3px;
+  margin-top: -1.5px;
+  background: #aaa;
+  border-radius: 50%;
+}
+
+/* Jumbotron */
+.jumbotron__button {
+  font-size: 16px;
+}
+/* responsive font size */
+@media (max-width: 576px) {
+  .jumbotron__title {
+    font-size: 9vw;
+    word-break: keep-all;
+  }
+  .jumbotron__sub-title {
+    font-size: 4.5vw;
+    word-break: keep-all;
+  }
+}
+@media (min-width: 576px) and (max-width: 1200px) {
+  .jumbotron__title {
+    font-size: 5vw;
+    word-break: keep-all;
+  }
+  .jumbotron__sub-title {
+    font-size: 2.5vw;
+    word-break: keep-all;
+  }
 }
