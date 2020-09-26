@@ -206,3 +206,67 @@ a {
     word-break: keep-all;
   }
 }
+
+/* Main Album */
+.main-album {
+  background: url(../../img/card-bg.jpg) 100% / cover no-repeat;
+  position: relative;
+}
+.main-album > * {
+  position: relative;
+  z-index: 2;
+}
+.main-album:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.9;
+}
+.main-album .card .img-holder {
+  height: 25rem;
+  transition: all ease 0.5s;
+}
+.main-album .card-1 .img-holder {
+  background: url(../../img/card-img-1.jpg) 100% / 100% 100% no-repeat;
+}
+.main-album .card-2 .img-holder {
+  background: url(../../img/card-img-2.jpg) 100% /100% 100% no-repeat;
+}
+.main-album .card-3 .img-holder {
+  background: url(../../img/card-img-3.jpg) 100% /100% 100% no-repeat;
+}
+
+.main-album .card-body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  padding: 24px 42px;
+  text-align: center;
+  top: 65%;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  -moz-transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.main-album .card:hover .card-body {
+  padding-top: 152px;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+}
+.main-album .card-title {
+  transition: all ease 0.6s;
+}
+.main-album .card:hover .card-title {
+  font-size: 28px;
+}
+.main-album .card {
+  transition: all ease 0.5s;
+}
+.main-album .card:hover .img-holder {
+  transform: scale(1.08);
+}
