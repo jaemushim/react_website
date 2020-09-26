@@ -1,0 +1,11 @@
+try {document.execCommand('BackgroundImageCache', false, true);} catch(e) {}
+
+function WinPopup(url, name, winWidth, winHeight, winPosLeft, winPosTop, scrollbars, status) {
+	scrollbars = (scrollbars=='1') ? "yes": "no";
+	status = (status=='1') ? "yes": "no";
+	var winOpt = 'toolbar=no,location=no,directory=no,status='+status+',menubar=no,scrollbars='+scrollbars+',resizable=no,copyhistory=no,width='+winWidth+',height='+winHeight+',top='+winPosTop+',left='+winPosLeft;
+	
+	var popup=window.open(url, name, winOpt);
+	popup.focus();
+}
+
