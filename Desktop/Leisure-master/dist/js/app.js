@@ -56,27 +56,22 @@ window.addEventListener("DOMContentLoaded", function () {
     }
     mobileSubmenuToggler();
   }
-  if (window.matchMedia("(min-width: 1200px)").matches) {
-    // main nav hover
-    document
-      .querySelector(".main-navbar")
-      .addEventListener("mouseover", function () {
-        document.querySelector(".navbar-brand-1").classList.add("d-none");
-        document.querySelector(".navbar-brand-2").classList.remove("d-none");
-      });
-    document
-      .querySelector(".main-navbar")
-      .addEventListener("mouseout", function () {
-        document.querySelector(".navbar-brand-1").classList.remove("d-none");
-        document.querySelector(".navbar-brand-2").classList.add("d-none");
-      });
-  }
 });
 
 // Navbar Scroll
-$(function () {
-  $(document).scroll(function () {
-    var $nav = $(".navbar");
-    $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-  });
+
+$(document).scroll(function () {
+  var $nav = $(".navbar");
+  $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+});
+
+$(".main-navbar").mouseover(function () {
+  $(".pc-submenu").css("height", "300px");
+  $(".navbar-nav").css("color", "fff");
+  $(".main-navbar").css("background-color", "rgba(0,0,0,0.7");
+});
+$(".main-navbar").mouseout(function () {
+  $(".pc-submenu").css("height", "0");
+  $(".main-navbar").css("background-color", "transparent");
+  $(".navbar-nav").css("color", "#fff");
 });

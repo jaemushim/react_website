@@ -49,9 +49,11 @@ a:hover {
 /* Navbar Scrolled  */
 .main-navbar.scrolled {
   background-color: rgba(0, 0, 0, 0.7) !important;
-  transition: all 200ms linear;
+  transition: all 150ms ease-in-out;
 }
-
+.color-333 {
+  color: #333 !important;
+}
 /* Mobile Side Menu */
 /* toggle css & overlay */
 .hamberger {
@@ -389,18 +391,6 @@ footer {
   color: #333;
 }
 
-@media (min-width: 1200px) {
-  .main-navbar:hover .pc-submenu {
-    height: 300px;
-  }
-  .main-navbar:hover {
-    background-color: #fff;
-  }
-  .main-navbar:hover .nav-item .nav-link {
-    color: #333 !important;
-  }
-}
-
 /* Pc Submenu */
 .pc-submenu {
   position: absolute;
@@ -421,4 +411,10 @@ footer {
 }
 .pc-submenu .sub-nav-link:hover {
   color: green !important;
+}
+.navbar-nav .nav-link {
+  color: inherit !important;
+}
+.navbar-nav {
+  color: #fff;
 }
