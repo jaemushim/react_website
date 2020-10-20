@@ -1,0 +1,29 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+@layer utilities {
+  .nanumsquare {
+    font-family: "NanumSquare", sans-serif !important;
+  }
+  .noto {
+    font-family: "Noto Sans KR", sans-serif;
+  }
+  .bg-hero {
+    background: url(img/hero.jpg);
+    background-size: 100% 100%;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  body {
+    height: 3000px;
+  }
+  .color-333 {
+    color: #333;
+  }
+}
